@@ -13,12 +13,10 @@ const Main = () => {
       <div className="main-container">
         <HashRouter>
           <Switch>
-          <Route exact path='/' component={Start} />
-          <Route path='/content' component={Content} />
+            <Route exact path='/' component={Start} />
+            <Route path='/content' component={Content} />
           </Switch>
         </HashRouter>
-        <Start />
-        <Content />
       </div>
     </main>
   )
