@@ -1,11 +1,14 @@
 import React from 'react';
 
-const VideoDetail = () => {
+const VideoDetail = ({video}) => {
+
+  // const videoId = video.id.videoId;
+  const url = `https://www.youtube.com/embed/${video}`;
+
   return (
-    <video>
-      
-    </video>
+    <iframe title="YouTube video" src={url}></iframe>
   )
+
 }
 
 export default VideoDetail;

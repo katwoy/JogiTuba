@@ -1,9 +1,17 @@
 import React from 'react';
+import VideoListItem from './VideoListItem';
 
-const VideoList = () => {
-  return (
-    <ul>
-      
+const VideoList = ({videos, handleVideoSelect}) => {
+
+  const videoItems = videos.map(video => {
+    return (
+      <VideoListItem key={video.id.videoId} video={video} handleVideoSelect={handleVideoSelect}/>       
+    )
+  })
+
+  return (  
+    <ul className="video-list">
+      {videoItems}
     </ul>
   )
 }
