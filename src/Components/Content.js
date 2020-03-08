@@ -16,7 +16,8 @@ const Content = () => {
     setInfoDisplay("none");
   }
 
-  const videoSearch = () => {
+  const videoSearch = (e) => {
+    e.preventDefault();
     if (channel === "placeholder") {
       setInfoDisplay("inline")
     } else {
@@ -28,7 +29,7 @@ const Content = () => {
   }
 
   const handleVideoSelect = (video) => {
-    setSelectedVideo(video);
+    setSelectedVideo(video)
   }
 
   return (

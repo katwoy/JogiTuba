@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="page-header">
       <div className="header-container">
-
+    nagłówek
       </div>
     </header>
   )
