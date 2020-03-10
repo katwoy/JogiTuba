@@ -43,8 +43,8 @@ const Content = () => {
           <option value="UCRZ3g1sUHp6cj87y1FE1YEQ">Eli Wierkowska / YOGA by Eli</option>
         </select>
       </form>
-      <Loading />
-      {/* {(channel !== "placeholder" && selectedVideo === "") && <Loading />} */}
+      {/* <Loading /> */}
+      {(channel !== "placeholder" && selectedVideo === "") && <Loading />}
       {selectedVideo !== "" && <VideoDetail video={selectedVideo}/>}
       {channel !== "placeholder" && <VideoList videos={yogaVideos} handleVideoSelect={handleVideoSelect} />}
     </>

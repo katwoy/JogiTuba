@@ -1,0 +1,36 @@
+.page-header {
+  height: 300px;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: #e98a8a;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-logo {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.header-logo-title {
+  font-family: Caveat, sans-serif;
+  font-weight: 300;
+  font-size: 80px;
+  color: #fff;
+  margin: 0;
+  display: inline;
+}
+
+.header-logo-image {
+  height: 100px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
