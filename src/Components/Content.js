@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
+import Loading from './Loading';
 
 const API_KEY = 'AIzaSyAILPW7QORbTQppl6KS96xWbGlOHf3sftc';
 
@@ -8,25 +9,20 @@ const Content = () => {
 
   const [channel, setChannel] = useState("placeholder");
   const [yogaVideos, setYogaVideos] = useState([]);
-  const [infoDisplay, setInfoDisplay] = useState("none");
   const [selectedVideo, setSelectedVideo] = useState('');
 
   const handleOption = (e) => {
     setChannel(e.currentTarget.value);
-    setInfoDisplay("none");
   }
 
-  const videoSearch = (e) => {
-    e.preventDefault();
-    if (channel === "placeholder") {
-      setInfoDisplay("inline")
-    } else {
+  useEffect(() => {
+    if (channel !== "placeholder") {
       fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${channel}&part=snippet,id&order=date&maxResults=9`)
       .then((response) => response.json())
       .then((responseJson) => {setYogaVideos(responseJson.items); setSelectedVideo(responseJson.items[0].id.videoId);})
       .catch((error) => {console.log(error)})
     }
-  }
+  }, [channel])
 
   const handleVideoSelect = (video) => {
     setSelectedVideo(video)
@@ -46,11 +42,11 @@ const Content = () => {
           <option value="UCzxhVfSsbG08fpSbLOl3O6Q">Agata Ucińska</option>
           <option value="UCRZ3g1sUHp6cj87y1FE1YEQ">Eli Wierkowska / YOGA by Eli</option>
         </select>
-        <button onClick={videoSearch}>Pokaż filmy</button>
-        <div style={{display: infoDisplay}}>Najpierw wybierz nauczycielkę</div>
       </form>
-      <VideoDetail video={selectedVideo}/>
-      <VideoList videos={yogaVideos} handleVideoSelect={handleVideoSelect} />
+      <Loading />
+      {/* {(channel !== "placeholder" && selectedVideo === "") && <Loading />} */}
+      {selectedVideo !== "" && <VideoDetail video={selectedVideo}/>}
+      {channel !== "placeholder" && <VideoList videos={yogaVideos} handleVideoSelect={handleVideoSelect} />}
     </>
   )
 }
