@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
 import Loading from './Loading';
+import './Content.css';
 
 const API_KEY = 'AIzaSyAILPW7QORbTQppl6KS96xWbGlOHf3sftc';
 

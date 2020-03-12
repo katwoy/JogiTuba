@@ -1,11 +1,13 @@
 import React from 'react';
 import Start from './Start';
 import Content from './Content';
+import './Main.css';
 import {
   HashRouter,
   Route,
   Switch,
   } from 'react-router-dom';
+  
 
 const Main = () => {
   return (
