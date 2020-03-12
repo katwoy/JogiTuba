@@ -1,3 +1,53 @@
+.welcome-message {
+  max-width: 600px;
+  position: relative;
+}
+
+.welcome-message::after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -400px;
+  background-image: url(../img/warrior.png); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+  opacity : 0.3;
+  z-index: -1;
+}
+
 .welcome-message-title {
-  font-size: 30px;
+  font-family: 'Caveat Brush', cursive;
+  font-weight: 300;
+  font-size: 50px;
+  color: #e98a8a;
+  margin-bottom: 30px;
+}
+
+.welcome-message-text {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.btn {
+  font-family: 'Caveat Brush', cursive;
+  background-color: transparent;
+  color: #e98a8a;
+  border: none;
+  border: 2px solid #e98a8a;
+  border-radius: 10px;
+  font-weight: 300;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e98a8a;
+  color: #fff;
 }
