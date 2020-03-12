@@ -32,6 +32,7 @@ const Content = () => {
   return (
     <>
       <form>
+        <h3>Wybierz, z kim chcesz dzisia praktykować</h3>
         <select value={channel} onChange={handleOption}>
           <option value="placeholder" disabled>wybierz nauczycielkę</option>
           <option value="UCBakkxKoa1gHXTTxf2O-QVQ">Ania Brzegowa / Joga Fusion</option>

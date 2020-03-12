@@ -1,0 +1,27 @@
+.video-item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-thumbnail-container {
+  position: relative;
+}
+
+.video-play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  width: 40px;
+  height: 30px;
+}
+
+.video-item-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
