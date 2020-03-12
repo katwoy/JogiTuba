@@ -6,14 +6,17 @@ const VideoList = ({videos, handleVideoSelect}) => {
 
   const videoItems = videos.map(video => {
     return (
-      <VideoListItem key={video.id.videoId} video={video} handleVideoSelect={handleVideoSelect}/>       
+      <VideoListItem key={video.contentDetails.videoId} video={video} handleVideoSelect={handleVideoSelect}/>       
     )
   })
 
   return (  
-    <ul className="video-list">
-      {videoItems}
-    </ul>
+    <>
+      <h3>Kliknij w miniaturę, aby wyświetlić film</h3>
+      <ul className="video-list">
+        {videoItems}
+      </ul>
+    </>
   )
 }
 
