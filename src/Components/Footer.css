@@ -16,7 +16,8 @@
   align-items: center;
 }
 
-.footer-icon-attribution a {
+.footer-container a {
   text-decoration: none;
+  font-weight: bold;
   color: #fff;
 }

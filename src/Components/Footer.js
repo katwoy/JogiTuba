@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="page-footer">
       <div className="footer-container">
         <div className="footer-copyright">
-          Copyright © 2020 <strong>JogiTuba</strong>
+          Copyright © 2020 <a href="/">JogiTuba</a>
         </div>
         <div className="footer-icon-attribution">
           Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" rel="nofollow">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" rel="nofollow">www.flaticon.com</a>

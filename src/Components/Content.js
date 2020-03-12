@@ -12,7 +12,7 @@ const Content = () => {
   const [yogaVideos, setYogaVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState('');
 
-  const handleOption = (e) => {git 
+  const handleOption = (e) => {
     setChannel(e.currentTarget.value);
   }
 
