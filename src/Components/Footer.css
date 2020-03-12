@@ -1,5 +1,22 @@
+.page-footer {
+  height: 80px;
+}
+
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  background: #e98a8a;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: rgb(233,138,138);
+  background: linear-gradient(120deg, rgba(233,138,138,1) 0%, rgba(255,191,191,1) 100%);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-icon-attribution a {
+  text-decoration: none;
+  color: #fff;
 }
