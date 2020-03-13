@@ -4,28 +4,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #e98a8a;
-  padding: 5px;
 }
 
-.video-thumbnail-container {
+.video-container {
   position: relative;
-}
-
-.video-play-button {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border: none;
-  width: 40px;
-  height: 30px;
+  border: 1px solid #e98a8a;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+  height: 250px;
+  cursor: pointer;
 }
 
 .video-item-title {
   font-family: Raleway, sans-serif;
+  font-size: 18px;
   font-weight: 300;
   margin: 0;
   max-width: 320px;
   text-align: center;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
