@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import VideoList from './VideoList';
 // import Loading from './Loading';
 import './Content.css';
+import teacher from '../img/teacher.png';
 
 const API_KEY = 'AIzaSyAILPW7QORbTQppl6KS96xWbGlOHf3sftc';
 
@@ -9,6 +10,7 @@ const Content = () => {
 
   const [channel, setChannel] = useState("placeholder");
   const [yogaVideos, setYogaVideos] = useState([]);
+  const [firstVideo, setFirstVideo] = useState("");
 
   const handleOption = (e) => {
     setChannel(e.currentTarget.value);
@@ -18,7 +20,7 @@ const Content = () => {
     if (channel !== "placeholder") {
       fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&playlistId=${channel}&key=${API_KEY}&order=date&maxResults=9`)
       .then((response) => response.json())
-      .then((responseJson) => {setYogaVideos(responseJson.items)})
+      .then((responseJson) => {setYogaVideos(responseJson.items); setFirstVideo(responseJson.items[0].contentDetails.videoId)})
       .catch((error) => {console.log(error)})
     }
   }, [channel])
@@ -45,9 +47,14 @@ const Content = () => {
           </select>
           </div>
       </form>
+      {
+        channel === "placeholder" &&
+        <div className="form-image">
+          <img src={teacher} alt="teacher"/>
+        </div>}
       {/* <Loading /> */}
       {/* {channel !== "placeholder" && <Loading />} */}
-      {channel !== "placeholder" && <VideoList videos={yogaVideos} />}
+      {channel !== "placeholder" && <VideoList videos={yogaVideos} first={firstVideo} />}
     </>
   )
 }

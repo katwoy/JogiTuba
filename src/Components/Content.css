@@ -22,6 +22,30 @@
   padding-right: 10px;
 }
 
+.form-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-image img {
+  height: 300px;
+  animation: float 6s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(15px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
 /* Reset Select */
 select {
   -webkit-appearance: none;
@@ -45,7 +69,7 @@ select::-ms-expand {
   position: relative;
   display: flex;
   width: 350px;
-  height: 3em;
+  height: 50px;
   line-height: 3;
   background: #e98a8a;
   overflow: hidden;
