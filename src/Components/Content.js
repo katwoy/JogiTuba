@@ -31,17 +31,19 @@ const Content = () => {
           <h3 className="form-title">Wybierz, z kim chcesz praktykować</h3> :
           <h3 className="form-title-change">Zmień nauczycielkę</h3>
         }
-        <select value={channel} onChange={handleOption}>
-          <option value="placeholder" disabled>wybierz nauczycielkę</option>
-          <option value="UUBakkxKoa1gHXTTxf2O-QVQ">Ania Brzegowa / Joga Fusion</option>
-          <option value="UU5-zHpWF_75thcj6CY9dFNQ">Patrycja Gawlińska / joginka.pl</option>
-          <option value="UUw-HC1NizWhlcFy7UT0kGcQ">Natalia Knopek / simplife.pl</option>
-          <option value="UUQTmnNx1Fymydue1xAs19rQ">Gosia Kobus / Anatomia Jogi</option>
-          <option value="UUITlHzj4MUzRNM17pdWUWeQ">Gosia Mostowska</option>
-          <option value="UUpqYY3zU3PbEPZ_7P-woiAw">Basia Tworek</option>
-          <option value="UUzxhVfSsbG08fpSbLOl3O6Q">Agata Ucińska</option>
-          <option value="UURZ3g1sUHp6cj87y1FE1YEQ">Eli Wierkowska / YOGA by Eli</option>
-        </select>
+        <div className="select">
+          <select value={channel} onChange={handleOption}>
+            <option value="placeholder" disabled>wybierz nauczycielkę</option>
+            <option value="UUBakkxKoa1gHXTTxf2O-QVQ">Ania Brzegowa / Joga Fusion</option>
+            <option value="UU5-zHpWF_75thcj6CY9dFNQ">Patrycja Gawlińska / joginka.pl</option>
+            <option value="UUw-HC1NizWhlcFy7UT0kGcQ">Natalia Knopek / simplife.pl</option>
+            <option value="UUQTmnNx1Fymydue1xAs19rQ">Gosia Kobus / Anatomia Jogi</option>
+            <option value="UUITlHzj4MUzRNM17pdWUWeQ">Gosia Mostowska</option>
+            <option value="UUpqYY3zU3PbEPZ_7P-woiAw">Basia Tworek</option>
+            <option value="UUzxhVfSsbG08fpSbLOl3O6Q">Agata Ucińska</option>
+            <option value="UURZ3g1sUHp6cj87y1FE1YEQ">Eli Wierkowska / YOGA by Eli</option>
+          </select>
+          </div>
       </form>
       {/* <Loading /> */}
       {/* {channel !== "placeholder" && <Loading />} */}

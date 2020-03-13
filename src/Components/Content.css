@@ -1,5 +1,8 @@
 .form {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-title {
@@ -7,9 +10,7 @@
   font-weight: 300;
   font-size: 40px;
   color: #e98a8a;
-  margin-bottom: 30px;
   padding-right: 20px;
-  display: inline-block;
 }
 
 .form-title-change {
@@ -19,5 +20,65 @@
   color: #e98a8a;
   margin-bottom: 10px;
   padding-right: 10px;
-  display: inline-block;
+}
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 350px;
+  height: 3em;
+  line-height: 3;
+  background: #e98a8a;
+  overflow: hidden;
+  border: 1px solid #e98a8a;
+  border-radius: 10px;
+}
+
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #333;
+  background: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #e98a8a;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+/* Transition */
+.select:hover::after {
+  color: #333;
 }
