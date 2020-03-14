@@ -1,3 +1,18 @@
+.back-to-start {
+  text-decoration: none;
+  color: #e98a8a;
+  text-transform: uppercase;
+}
+
+.back-to-start:hover {
+  color: #333;
+}
+
+.back-to-start div {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
 .form {
   margin-bottom: 30px;
   display: flex;

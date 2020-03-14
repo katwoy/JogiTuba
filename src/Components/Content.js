@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import VideoList from './VideoList';
 // import Loading from './Loading';
 import './Content.css';
@@ -27,6 +28,7 @@ const Content = () => {
 
   return (
     <>
+      <Link to='/' className="back-to-start"><div>&#8672; Wróć na stronę startową</div></Link>
       <form className="form">
         {
           channel === "placeholder" ? 
