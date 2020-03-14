@@ -28,3 +28,18 @@
   margin-left: 10px;
   margin-right: 20px;
 }
+
+@media (max-width: 768px) {
+
+  .page-header {
+    height: 200px;
+  }
+
+  .header-logo-title {
+    font-size: 50px;
+  }
+
+  .header-logo-image {
+    height: 70px;
+  }
+}
