@@ -27,7 +27,7 @@ const Content = () => {
   }, [channel])
 
   return (
-    <>
+    <div>
       <Link to='/' className="back-to-start"><div>&#8672; Wróć na stronę startową</div></Link>
       <form className="form">
         {
@@ -57,7 +57,7 @@ const Content = () => {
       {/* <Loading /> */}
       {/* {channel !== "placeholder" && <Loading />} */}
       {channel !== "placeholder" && <VideoList videos={yogaVideos} first={firstVideo} />}
-    </>
+    </div>
   )
 }
 
