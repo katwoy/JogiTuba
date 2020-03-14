@@ -19,9 +19,10 @@ const VideoList = ({videos}) => {
 
   const videoItems = videos.map(video => {
     return (
-      <>
-        <VideoListItem key={video.contentDetails.videoId} video={video} handleVideoSelect={handleVideoSelect} />   
-      </>    
+        <VideoListItem 
+        handleVideoSelect={handleVideoSelect}
+        key={video.contentDetails.videoId} 
+        video={video} />      
     )
   })
 
