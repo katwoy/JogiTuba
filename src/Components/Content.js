@@ -5,7 +5,7 @@ import VideoList from './VideoList';
 import './Content.css';
 import teacher from '../img/teacher.png';
 
-const API_KEY = 'AIzaSyAILPW7QORbTQppl6KS96xWbGlOHf3sftc';
+const API_KEY = `${process.env.REACT_APP_YOUTUBE_API_KEY}`;
 
 const Content = () => {
 
