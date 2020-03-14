@@ -14,3 +14,12 @@
   font-weight: bold;
   color: #fff;
 }
+
+@media (max-width: 768px) {
+
+  .page-footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
