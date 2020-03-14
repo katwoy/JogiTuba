@@ -13,15 +13,13 @@ import {
 const Main = () => {
   return (
     <main className="page-main">
-      <div className="main-container">
-        <HashRouter>
-          <Switch>
-            <Route exact path='/' component={Start} />
-            <Route path='/content' component={Content} />
-            <Route component={NotFound} />
-          </Switch>
-        </HashRouter>
-      </div>
+      <HashRouter>
+        <Switch>
+          <Route exact path='/' component={Start} />
+          <Route path='/content' component={Content} />
+          <Route component={NotFound} />
+        </Switch>
+      </HashRouter>
     </main>
   )
 }

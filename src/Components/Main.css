@@ -1,7 +1,6 @@
-.main-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 20px;
+.page-main {
+  flex-grow: 1;
   border-left: 5px dotted #e98a8a;
   border-right: 5px dotted #ffbfbf;
+  padding: 50px 20px;
 }

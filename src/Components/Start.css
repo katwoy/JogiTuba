@@ -1,21 +1,17 @@
-.welcome-message {
-  max-width: 600px;
-  position: relative;
+.start {
+  display: flex;
+  justify-content: space-around;
+  min-height: 500px;
 }
 
-.welcome-message::after {
-  content : "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -400px;
-  background-image: url(../img/warrior.png); 
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 300px;
+.start img {
   width: 300px;
-  opacity : 0.3;
-  z-index: -1;
+  height: 300px;
+  align-self: flex-end;
+}
+
+.welcome-message {
+  max-width: 600px;
 }
 
 .welcome-message-title {
