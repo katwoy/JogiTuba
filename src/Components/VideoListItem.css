@@ -16,6 +16,11 @@
   cursor: pointer;
 }
 
+.video-container:hover {
+  background-color: #ffbfbf;
+  border-color: #ffbfbf;
+}
+
 .video-item-title {
   font-family: Raleway, sans-serif;
   font-size: 18px;
