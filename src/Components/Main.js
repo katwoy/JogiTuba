@@ -1,6 +1,7 @@
 import React from 'react';
 import Start from './Start';
 import Content from './Content';
+import NotFound from './NotFound';
 import './Main.css';
 import {
   HashRouter,
@@ -17,6 +18,7 @@ const Main = () => {
           <Switch>
             <Route exact path='/' component={Start} />
             <Route path='/content' component={Content} />
+            <Route component={NotFound} />
           </Switch>
         </HashRouter>
       </div>

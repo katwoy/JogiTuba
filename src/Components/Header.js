@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import logo from '../img/jogituba-logo.png'
+import logo from '../img/jogituba-logo.png';
 
 const Header = () => {
   return (
