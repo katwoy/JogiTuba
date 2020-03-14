@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import VideoListItem from './VideoListItem';
 import './VideoList.css';
+import VideoListItem from './VideoListItem';
 import VideoDetail from './VideoDetail';
 
 const VideoList = ({videos}) => {
