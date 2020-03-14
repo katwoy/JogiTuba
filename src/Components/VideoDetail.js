@@ -9,7 +9,7 @@ const VideoDetail = ({video, handleClose}) => {
     <div className="video-display">
       <div className="video-display-shade"></div>
       <div className="video-display-container">
-        <iframe title="YouTube video" src={url} width="640" height="360" allowFullScreen frameBorder="0"></iframe>
+        <iframe className="video-display-iframe" title="YouTube video" src={url} width="640" height="360" allowFullScreen frameBorder="0"></iframe>
         <button className="video-display-close" onClick={() => handleClose(false)}>X</button>
       </div>
     </div>
