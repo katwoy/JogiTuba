@@ -27,7 +27,7 @@ const Content = () => {
   }, [channel])
 
   return (
-    <div>
+    <div className="content-container">
       <Link to='/' className="back-to-start"><div>&#8672; Wróć na stronę startową</div></Link>
       <form className="form">
         {

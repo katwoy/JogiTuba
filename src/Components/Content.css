@@ -1,3 +1,7 @@
+.content-container {
+  flex-grow: 1;
+}
+
 .back-to-start {
   text-decoration: none;
   color: #e98a8a;
@@ -120,4 +124,23 @@ select {
 /* Transition */
 .select:hover::after {
   color: #333;
+}
+
+@media (max-width: 768px) {
+
+  .back-to-start {
+    align-self: flex-start;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form-title {
+    margin-bottom: 40px;
+  }
+
+  select {
+    font-size: 14px;
+  }
 }
