@@ -54,3 +54,18 @@
     width: 200px;
   }
 }
+
+@media (max-width: 600px) {
+
+  .error-404-title {
+    font-size: 24px;
+  }
+
+  .error-404-text, .error-404-link {
+    font-size: 14px;
+  }
+
+  .error-404-img {
+    width: 120px;
+  }
+}

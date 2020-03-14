@@ -7,11 +7,11 @@ const NotFound = () => {
 
   const [tooltip, setTooltip] = useState("hidden");
 
-  const handleMouseEnter = () => {
+  const handleEnter = () => {
     setTooltip("visible")
   }
 
-  const handleMouseLeave = () => {
+  const handleLeave = () => {
     setTooltip("hidden")
   }
 
@@ -23,7 +23,7 @@ const NotFound = () => {
       <div className="error-404-text">lub</div>
       <Link to="/content" className="error-404-link">Przejdź do wyboru nauczycielki</Link>
       <div className="error-404-text">lub</div>
-      <img src={savasana} alt="savasana" className="error-404-img" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+      <img src={savasana} alt="savasana" className="error-404-img" onMouseEnter={handleEnter} onMouseLeave={handleLeave} onTouchStart={handleEnter} onTouchEnd={handleLeave}/>
       <div className="error-404-text" style={{visibility: tooltip}}>Zrelaksuj się w savasanie. To zawsze dobry pomysł :)</div>
     </div>
   )

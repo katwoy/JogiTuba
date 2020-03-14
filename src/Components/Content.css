@@ -112,12 +112,10 @@ select {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0 1em;
+  padding: 0 15px;
   background: #e98a8a;
   cursor: pointer;
   pointer-events: none;
-  -webkit-transition: .25s all ease;
-  -o-transition: .25s all ease;
   transition: .25s all ease;
 }
 
@@ -140,7 +138,55 @@ select {
     margin-bottom: 40px;
   }
 
+  .select {
+    width: 260px;
+  }
+
   select {
     font-size: 14px;
   }
 }
+
+@media (max-width: 600px) {
+
+  .back-to-start div {
+    font-size: 10px;
+  }
+
+  .form {
+    margin-bottom: 10px;
+  }
+
+  .form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form-title-change {
+    font-size: 18px;
+  }
+
+  .form-image img {
+    height: 120px;
+  }
+
+  .select {
+    width: 220px;
+    height: 30px;
+  }
+
+  .select::after {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+  }
+
+  select {
+    font-size: 11px;
+  }
+}
+

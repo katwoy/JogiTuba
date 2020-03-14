@@ -33,3 +33,22 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 600px) {
+
+  .video-thumbnail {
+    height: 150px;
+  }
+
+  .video-item-title {
+    font-size: 12px;
+    max-width: 266px;
+  }
+
+  .video-container {
+    padding: 5px;
+    height: 200px;
+    margin-bottom: 5px;
+  }
+
+}

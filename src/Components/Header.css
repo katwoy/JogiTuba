@@ -43,3 +43,18 @@
     height: 70px;
   }
 }
+
+@media (max-width: 600px) {
+
+  .page-header {
+    height: 120px;
+  }
+
+  .header-logo-title {
+    font-size: 30px;
+  }
+
+  .header-logo-image {
+    height: 40px;
+  }
+}
