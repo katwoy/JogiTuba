@@ -28,11 +28,12 @@
   line-height: 30px;
 }
 
-.btn {
+.start-btn {
   font-family: 'Caveat Brush', cursive;
   background-color: transparent;
   color: #e98a8a;
-  border: none;
+  text-decoration: none;
+  display: inline-block;
   border: 2px solid #e98a8a;
   border-radius: 10px;
   font-weight: 300;
@@ -42,7 +43,7 @@
   cursor: pointer;
 }
 
-.btn:hover {
+.start-btn:hover {
   background-color: #e98a8a;
   color: #fff;
 }
@@ -80,7 +81,7 @@
     height: 120px;
   }
 
-  .btn {
+  .start-btn {
     font-size: 14px;
     padding: 5px 10px;
   }

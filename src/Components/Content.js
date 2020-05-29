@@ -26,7 +26,7 @@ const Content = () => {
 
   return (
     <div className="content-container">
-      <Link to='/' className="back-to-start"><div>&#8672; Wróć na stronę startową</div></Link>
+      <Link to='/' className="back-to-start">&#8672; Wróć na stronę startową</Link>
       <form className="form">
         {
           channel === "placeholder" ? 
