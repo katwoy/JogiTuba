@@ -35,7 +35,6 @@
   font-weight: 300;
   font-size: 25px;
   color: #e98a8a;
-  margin-bottom: 10px;
   padding-right: 10px;
 }
 
@@ -114,7 +113,7 @@ select {
   background: #e98a8a;
   cursor: pointer;
   pointer-events: none;
-  transition: .25s all ease;
+  transition: 0.5s all ease-in-out;
 }
 
 /* Transition */
