@@ -1,19 +1,21 @@
 .video-item {
   list-style: none;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .video-container {
-  position: relative;
   border: 1px solid #e98a8a;
   border-radius: 5px;
   background-color: transparent;
   padding: 10px;
-  height: 250px;
+  height: 300px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .video-container:hover {
@@ -28,7 +30,7 @@
   margin: 0;
   max-width: 320px;
   text-align: center;
-  height: 42px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
