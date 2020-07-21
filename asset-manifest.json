@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/JogiTuba/static/css/main.f84e894b.chunk.css",
+    "main.js": "/JogiTuba/static/js/main.3a5b1d6d.chunk.js",
+    "main.js.map": "/JogiTuba/static/js/main.3a5b1d6d.chunk.js.map",
+    "runtime-main.js": "/JogiTuba/static/js/runtime-main.3b22d269.js",
+    "runtime-main.js.map": "/JogiTuba/static/js/runtime-main.3b22d269.js.map",
+    "static/js/2.65a17b4d.chunk.js": "/JogiTuba/static/js/2.65a17b4d.chunk.js",
+    "static/js/2.65a17b4d.chunk.js.map": "/JogiTuba/static/js/2.65a17b4d.chunk.js.map",
+    "index.html": "/JogiTuba/index.html",
+    "precache-manifest.6572fcc7db4ef359ca2834f8606106a1.js": "/JogiTuba/precache-manifest.6572fcc7db4ef359ca2834f8606106a1.js",
+    "service-worker.js": "/JogiTuba/service-worker.js",
+    "static/css/main.f84e894b.chunk.css.map": "/JogiTuba/static/css/main.f84e894b.chunk.css.map",
+    "static/js/2.65a17b4d.chunk.js.LICENSE.txt": "/JogiTuba/static/js/2.65a17b4d.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/JogiTuba/static/media/logo.c509e525.png",
+    "static/media/savasana.png": "/JogiTuba/static/media/savasana.32b74098.png",
+    "static/media/teacher.png": "/JogiTuba/static/media/teacher.b05c776c.png",
+    "static/media/warrior.png": "/JogiTuba/static/media/warrior.36c46a1c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b22d269.js",
+    "static/js/2.65a17b4d.chunk.js",
+    "static/css/main.f84e894b.chunk.css",
+    "static/js/main.3a5b1d6d.chunk.js"
+  ]
+}
