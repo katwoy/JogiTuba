@@ -44,6 +44,9 @@ const Content = () => {
             <option value="UUpqYY3zU3PbEPZ_7P-woiAw">Basia Tworek</option>
             <option value="UUzxhVfSsbG08fpSbLOl3O6Q">Agata Ucińska</option>
             <option value="UURZ3g1sUHp6cj87y1FE1YEQ">Eli Wierkowska / YOGA by Eli</option>
+            <option value="UUDDqMzExLzooYvZmxX_HtXw">Anna Cichy-Fatyga Yoga</option>
+            <option value="UUI6_Hih8NQTkEZHJvbPm30w">Katarzyna Złotkowska Joga dla zdrowia</option>
+            <option value="UUsb_pBN7AMufokAZ8z2OeFw">Stresoterapia</option>
           </select>
           </div>
       </form>
