@@ -39,12 +39,12 @@
 @media (max-width: 600px) {
 
   .video-thumbnail {
-    height: 150px;
+    height: 130px;
   }
 
   .video-item-title {
     font-size: 12px;
-    max-width: 266px;
+    max-width: 230px;
   }
 
   .video-container {
