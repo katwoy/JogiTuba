@@ -147,7 +147,7 @@ select {
 
 @media (max-width: 600px) {
 
-  .back-to-start div {
+  .back-to-start {
     font-size: 10px;
   }
 
