@@ -17,7 +17,7 @@ const Content = () => {
 
   useEffect(() => {
     if (channel !== "placeholder") {
-      fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&playlistId=${channel}&key=${API_KEY}&order=date&maxResults=9`)
+      fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&playlistId=${channel}&key=${API_KEY}&order=date&maxResults=16`)
       .then((response) => response.json())
       .then((responseJson) => {setYogaVideos(responseJson.items)})
       .catch((error) => {console.log(error)})
