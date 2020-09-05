@@ -132,6 +132,10 @@ select {
     margin-bottom: 40px;
   }
 
+  .form-title-change {
+    margin-bottom: 16px;
+  }
+
 }
 
 @media (max-width: 768px) {

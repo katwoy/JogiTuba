@@ -36,6 +36,14 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+
+  .video-container {
+    margin-bottom: 5px;
+  }
+
+}
+
 @media (max-width: 600px) {
 
   .video-thumbnail {
@@ -43,8 +51,8 @@
   }
 
   .video-item-title {
-    font-size: 12px;
-    max-width: 230px;
+    font-size: 16px;
+    width: 300px;
   }
 
   .video-container {

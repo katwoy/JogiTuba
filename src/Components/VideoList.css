@@ -2,7 +2,7 @@
 
 .video-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
 
@@ -16,23 +16,36 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
+
+  .video-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 1200px) {
 
   .video-list {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .video-list-title {
-    font-size: 30px;
-  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   .video-list {
     display: flex;
     flex-direction: column;
   }
+
+  .video-list-title {
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width: 600px) {
 
   .video-list-title {
     font-size: 18px;
