@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/JogiTuba/precache-manifest.fc7f93b1b7159e6aff5057a4c687bd8f.js"
+  "/JogiTuba/precache-manifest.3a3705bd5d2a318b88ffbe00e69c45e2.js"
 );
 
 self.addEventListener('message', (event) => {

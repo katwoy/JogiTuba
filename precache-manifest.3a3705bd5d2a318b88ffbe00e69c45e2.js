@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c86bac588c13e9b450a71169d4ff830c",
+    "revision": "f02ec1d282070e73b68a5f8045b8ae41",
     "url": "/JogiTuba/index.html"
   },
   {
-    "revision": "efb81429f2f8c826ed30",
-    "url": "/JogiTuba/static/css/main.0829d1a9.chunk.css"
+    "revision": "5978a8d1d57e40be7fcc",
+    "url": "/JogiTuba/static/css/main.0870b569.chunk.css"
   },
   {
     "revision": "925701bf12069c3e917e",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JogiTuba/static/js/2.387c3dcd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "efb81429f2f8c826ed30",
-    "url": "/JogiTuba/static/js/main.459b913a.chunk.js"
+    "revision": "5978a8d1d57e40be7fcc",
+    "url": "/JogiTuba/static/js/main.b3174320.chunk.js"
   },
   {
     "revision": "708df44cda823eac5899",
