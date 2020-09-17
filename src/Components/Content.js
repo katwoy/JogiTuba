@@ -17,7 +17,7 @@ const Content = () => {
 
   useEffect(() => {
     if (channel !== "placeholder") {
-      fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&playlistId=${channel}&key=${API_KEY}&order=date&maxResults=24`)
+      fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&playlistId=${channel}&key=${API_KEY}&order=date&maxResults=12`)
       .then((response) => response.json())
       .then((responseJson) => {setYogaVideos(responseJson.items)})
       .catch((error) => {console.log(error)})
@@ -47,6 +47,7 @@ const Content = () => {
             <option value="UUDDqMzExLzooYvZmxX_HtXw">Anna Cichy-Fatyga Yoga</option>
             <option value="UUI6_Hih8NQTkEZHJvbPm30w">Katarzyna Złotkowska</option>
             <option value="UUsb_pBN7AMufokAZ8z2OeFw">Stresoterapia</option>
+            <option value="UUqMupLy0lj64Fe0t6Ac1IAw">Olga Butkiewicz</option>
           </select>
           </div>
       </form>
